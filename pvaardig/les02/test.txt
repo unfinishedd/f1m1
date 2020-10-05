@@ -1,0 +1,502 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\sam00> cd newDirectory
+cd : Cannot find path 'C:\Users\sam00\newDirectory' because it does not exist.
+At line:1 char:1
++ cd newDirectory
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\sam00\newDirectory:String) [Set-
+   Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationComm
+   and
+
+PS C:\Users\sam00> CWD
+CWD : The term 'CWD' is not recognized as the name of a cmdlet, function, script file, or
+ operable program. Check the spelling of the name, or if a path was included, verify that
+ the path is correct and try again.
+At line:1 char:1
++ CWD
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (CWD:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\sam00> ls
+
+
+    Directory: C:\Users\sam00
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-r---        11-9-2020     14:36                3D Objects
+d-r---        11-9-2020     14:36                Contacts
+d-r---        11-9-2020     14:29                Desktop
+d-----        10-9-2020     13:05                Documents
+d-r---        14-9-2020     14:49                Downloads
+d-r---        11-9-2020     14:36                Favorites
+d-r---        11-9-2020     14:36                Links
+d-r---        11-9-2020     14:36                Music
+dar--l        14-9-2020     18:31                OneDrive
+d-----        10-9-2020     13:05                Pictures
+d-----        11-9-2020     10:31                PycharmProjects
+d-----        14-9-2020     14:00                PythonAchievements
+d-r---        11-9-2020     14:36                Saved Games
+d-r---        11-9-2020     14:36                Searches
+d-r---        11-9-2020     14:36                Videos
+-a----         9-9-2020     14:40             86 .bash_history
+-a----        10-9-2020     15:59            170 .gitconfig
+-a----        10-9-2020     15:55              0 commit
+-a----        10-9-2020     15:55              0 git
+-a----        10-9-2020     15:55              0 master)
+-a----        10-9-2020     15:55              0 Omit
+-a----        10-9-2020     15:02             25 README.md
+
+
+PS C:\Users\sam00> dw
+dw : The term 'dw' is not recognized as the name of a cmdlet, function, script file, or o
+perable program. Check the spelling of the name, or if a path was included, verify that t
+he path is correct and try again.
+At line:1 char:1
++ dw
++ ~~
+    + CategoryInfo          : ObjectNotFound: (dw:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\sam00> lw
+lw : The term 'lw' is not recognized as the name of a cmdlet, function, script file, or o
+perable program. Check the spelling of the name, or if a path was included, verify that t
+he path is correct and try again.
+At line:1 char:1
++ lw
++ ~~
+    + CategoryInfo          : ObjectNotFound: (lw:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\sam00> l PythonAchievements
+l : The term 'l' is not recognized as the name of a cmdlet, function, script file, or ope
+rable program. Check the spelling of the name, or if a path was included, verify that the
+ path is correct and try again.
+At line:1 char:1
++ l PythonAchievements
++ ~
+    + CategoryInfo          : ObjectNotFound: (l:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\sam00> cd..
+PS C:\Users> cd newDirectory
+cd : Cannot find path 'C:\Users\newDirectory' because it does not exist.
+At line:1 char:1
++ cd newDirectory
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\newDirectory:String) [Set-Locati
+   on], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationComm
+   and
+
+PS C:\Users> rm newDirectory
+rm : Cannot find path 'C:\Users\newDirectory' because it does not exist.
+At line:1 char:1
++ rm newDirectory
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\newDirectory:String) [Remove-Ite
+   m], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemComma
+   nd
+
+PS C:\Users>
+PS C:\Users> cd.. f1m1
+PS C:\> f1m1
+f1m1 : The term 'f1m1' is not recognized as the name of a cmdlet, function, script file,
+or operable program. Check the spelling of the name, or if a path was included, verify th
+at the path is correct and try again.
+At line:1 char:1
++ f1m1
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (f1m1:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\> ls
+
+
+    Directory: C:\
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        11-9-2020     14:26                AMD
+d-----        14-9-2020     12:43                Beroepsopdracht
+d-----        14-9-2020     11:00                Flex-PythonExtra
+d-----        11-9-2020     15:04                inetpub
+d-----        11-8-2020     07:32                Intel
+d-----        11-9-2020     15:17                PerfLogs
+d-r---        14-9-2020     10:11                Program Files
+d-r---        13-9-2020     14:41                Program Files (x86)
+d-----        14-9-2020     14:00                PythonAchievements
+d-----        11-8-2020     18:08                SWSetup
+d-r---        11-9-2020     14:27                Users
+d-----        11-9-2020     14:34                Windows
+d-----        11-9-2020     14:34                Windows.old
+
+
+PS C:\> cd users
+PS C:\users> ls
+
+
+    Directory: C:\users
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-r---        14-9-2020     21:19                Public
+d-----        14-9-2020     18:38                sam00
+
+
+PS C:\users> cd sam00
+PS C:\users\sam00> ls
+
+
+    Directory: C:\users\sam00
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-r---        11-9-2020     14:36                3D Objects
+d-r---        11-9-2020     14:36                Contacts
+d-r---        11-9-2020     14:29                Desktop
+d-----        10-9-2020     13:05                Documents
+d-r---        14-9-2020     19:02                Downloads
+d-r---        11-9-2020     14:36                Favorites
+d-r---        11-9-2020     14:36                Links
+d-r---        11-9-2020     14:36                Music
+dar--l        14-9-2020     18:31                OneDrive
+d-----        10-9-2020     13:05                Pictures
+d-----        11-9-2020     10:31                PycharmProjects
+d-----        14-9-2020     14:00                PythonAchievements
+d-r---        11-9-2020     14:36                Saved Games
+d-r---        11-9-2020     14:36                Searches
+d-r---        11-9-2020     14:36                Videos
+-a----         9-9-2020     14:40             86 .bash_history
+-a----        10-9-2020     15:59            170 .gitconfig
+-a----        10-9-2020     15:55              0 commit
+-a----        10-9-2020     15:55              0 git
+-a----        10-9-2020     15:55              0 master)
+-a----        10-9-2020     15:55              0 Omit
+-a----        10-9-2020     15:02             25 README.md
+
+
+PS C:\users\sam00> cd documents
+PS C:\users\sam00\documents> ls
+PS C:\users\sam00\documents> explore .
+explore : The term 'explore' is not recognized as the name of a cmdlet, function, script file, or ope
+rable program. Check the spelling of the name, or if a path was included, verify that the path is cor
+rect and try again.
+At line:1 char:1
++ explore .
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (explore:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\users\sam00\documents> explorer
+PS C:\users\sam00\documents> explorer .
+PS C:\users\sam00\documents> md f1m1
+
+
+    Directory: C:\users\sam00\documents
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        14-9-2020     21:32                f1m1
+
+
+PS C:\users\sam00\documents> cd f1m1
+PS C:\users\sam00\documents\f1m1> md beroep
+
+
+    Directory: C:\users\sam00\documents\f1m1
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        14-9-2020     21:35                beroep
+
+
+PS C:\users\sam00\documents\f1m1> md python
+
+
+    Directory: C:\users\sam00\documents\f1m1
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        14-9-2020     21:35                python
+
+
+PS C:\users\sam00\documents\f1m1> pvaardig
+pvaardig : The term 'pvaardig' is not recognized as the name of a cmdlet, function, script file, or o
+perable program. Check the spelling of the name, or if a path was included, verify that the path is c
+orrect and try again.
+At line:1 char:1
++ pvaardig
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (pvaardig:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\users\sam00\documents\f1m1> cd pvaardig
+cd : Cannot find path 'C:\users\sam00\documents\f1m1\pvaardig' because it does not exist.
+At line:1 char:1
++ cd pvaardig
++ ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\users\sam00\documents\f1m1\pvaardig:String) [Set-L
+   ocation], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\users\sam00\documents\f1m1> md pvaardig
+
+
+    Directory: C:\users\sam00\documents\f1m1
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        14-9-2020     21:36                pvaardig
+
+
+PS C:\users\sam00\documents\f1m1> cd documents
+cd : Cannot find path 'C:\users\sam00\documents\f1m1\documents' because it does not exist.
+At line:1 char:1
++ cd documents
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\users\sam00\documents\f1m1\documents:String) [Set-
+   Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\users\sam00\documents\f1m1> ls
+
+
+    Directory: C:\users\sam00\documents\f1m1
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        14-9-2020     21:35                beroep
+d-----        14-9-2020     21:36                pvaardig
+d-----        14-9-2020     21:35                python
+
+
+PS C:\users\sam00\documents\f1m1> ls a
+ls : Cannot find path 'C:\users\sam00\documents\f1m1\a' because it does not exist.
+At line:1 char:1
++ ls a
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\users\sam00\documents\f1m1\a:String) [Get-ChildIte
+   m], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+PS C:\users\sam00\documents\f1m1> cd ..
+PS C:\users\sam00\documents> tree
+Folder PATH listing for volume Windows
+Volume serial number is 3EB0-A327
+C:.
+└───f1m1
+    ├───beroep
+    ├───pvaardig
+    └───python
+PS C:\users\sam00\documents> cd f1m1/pvaardig
+PS C:\users\sam00\documents\f1m1\pvaardig> md les01
+
+
+    Directory: C:\users\sam00\documents\f1m1\pvaardig
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        14-9-2020     21:41                les01
+
+
+PS C:\users\sam00\documents\f1m1\pvaardig> md les02
+
+
+    Directory: C:\users\sam00\documents\f1m1\pvaardig
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        14-9-2020     21:42                les02
+
+
+PS C:\users\sam00\documents\f1m1\pvaardig> md les03
+
+
+    Directory: C:\users\sam00\documents\f1m1\pvaardig
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        14-9-2020     21:42                les03
+
+
+PS C:\users\sam00\documents\f1m1\pvaardig> md les04
+
+
+    Directory: C:\users\sam00\documents\f1m1\pvaardig
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        14-9-2020     21:42                les04
+
+
+PS C:\users\sam00\documents\f1m1\pvaardig> md les05
+
+
+    Directory: C:\users\sam00\documents\f1m1\pvaardig
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        14-9-2020     21:42                les05
+
+
+PS C:\users\sam00\documents\f1m1\pvaardig> md les06
+
+
+    Directory: C:\users\sam00\documents\f1m1\pvaardig
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        14-9-2020     21:42                les06
+
+
+PS C:\users\sam00\documents\f1m1\pvaardig> md les07
+
+
+    Directory: C:\users\sam00\documents\f1m1\pvaardig
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        14-9-2020     21:42                les07
+
+
+PS C:\users\sam00\documents\f1m1\pvaardig> md les08
+
+
+    Directory: C:\users\sam00\documents\f1m1\pvaardig
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        14-9-2020     21:42                les08
+
+
+PS C:\users\sam00\documents\f1m1\pvaardig> cd..
+PS C:\users\sam00\documents\f1m1> cd..
+PS C:\users\sam00\documents> tree
+Folder PATH listing for volume Windows
+Volume serial number is 3EB0-A327
+C:.
+└───f1m1
+    ├───beroep
+    ├───pvaardig
+    │   ├───les01
+    │   ├───les02
+    │   ├───les03
+    │   ├───les04
+    │   ├───les05
+    │   ├───les06
+    │   ├───les07
+    │   └───les08
+    └───python
+PS C:\users\sam00\documents> ^C
+PS C:\users\sam00\documents> cd f1m1\pvaardig\les01\
+PS C:\users\sam00\documents\f1m1\pvaardig\les01> notepad
+PS C:\users\sam00\documents\f1m1\pvaardig\les01> notepad test.txt
+PS C:\users\sam00\documents\f1m1\pvaardig\les01> tree
+Folder PATH listing for volume Windows
+Volume serial number is 3EB0-A327
+C:.
+No subfolders exist
+
+PS C:\users\sam00\documents\f1m1\pvaardig\les01> cd..
+PS C:\users\sam00\documents\f1m1\pvaardig> cd..
+PS C:\users\sam00\documents\f1m1> cd..
+PS C:\users\sam00\documents> tree
+Folder PATH listing for volume Windows
+Volume serial number is 3EB0-A327
+C:.
+└───f1m1
+    ├───beroep
+    ├───pvaardig
+    │   ├───les01
+    │   ├───les02
+    │   ├───les03
+    │   ├───les04
+    │   ├───les05
+    │   ├───les06
+    │   ├───les07
+    │   └───les08
+    └───python
+PS C:\users\sam00\documents> cd .\les02
+cd : Cannot find path 'C:\users\sam00\documents\les02' because it does not exist.
+At line:1 char:1
++ cd .\les02
++ ~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\users\sam00\documents\les02:String) [Set-Location]
+   , ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\users\sam00\documents> cd f1m1
+PS C:\users\sam00\documents\f1m1> cd pvaardig
+PS C:\users\sam00\documents\f1m1\pvaardig> cd les02
+PS C:\users\sam00\documents\f1m1\pvaardig\les02> md geheim
+
+
+    Directory: C:\users\sam00\documents\f1m1\pvaardig\les02
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        14-9-2020     21:59                geheim
+
+
+PS C:\users\sam00\documents\f1m1\pvaardig\les02> ls
+
+
+    Directory: C:\users\sam00\documents\f1m1\pvaardig\les02
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        14-9-2020     21:59                geheim
+
+
+PS C:\users\sam00\documents\f1m1\pvaardig\les02> attrib geheim +h
+PS C:\users\sam00\documents\f1m1\pvaardig\les02> ls
+PS C:\users\sam00\documents\f1m1\pvaardig\les02> atrrib geheim -h
+atrrib : The term 'atrrib' is not recognized as the name of a cmdlet, function, script file, or opera
+ble program. Check the spelling of the name, or if a path was included, verify that the path is corre
+ct and try again.
+At line:1 char:1
++ atrrib geheim -h
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (atrrib:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\users\sam00\documents\f1m1\pvaardig\les02> attrib geheim -h
+PS C:\users\sam00\documents\f1m1\pvaardig\les02> ls
+
+
+    Directory: C:\users\sam00\documents\f1m1\pvaardig\les02
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        14-9-2020     21:59                geheim
+
+
+PS C:\users\sam00\documents\f1m1\pvaardig\les02>
